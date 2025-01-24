@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
+    libagm:64 \
+    lib_bt_aptx:64 \
+    lib_bt_ble:64 \
+    lib_bt_bundle:64 \
     libaudiopreprocessing:64 \
     libqcompostprocbundle:64 \
     libqcomvisualizer:64 \
@@ -70,8 +74,13 @@ PRODUCT_PACKAGES += \
     libagmmixer:64 \
     libbatterylistener:64 \
     libfmpal:64 \
+    libhfp_pal:64 \
     libpalclient:64 \
-    libsndcardparser:64
+    libsndcardparser:64 \
+    vendor.qti.hardware.pal@1.0-impl:64 \
+    vendor.qti.hardware.AGMIPC@1.0-impl:64
+
+AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_effects.xml \

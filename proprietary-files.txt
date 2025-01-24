@@ -2,9 +2,9 @@
 ## are from Redmi Note 13 (OS2.0.10.0.VNGMIXM).
 
 # Current blobs with ELF checks disabled:
-# libqtigefar and vendor.qti.hardware.pal@1.0-impl depend on libar-pal, which is decommonized
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
-# vendor.qti.hardware.AGMIPC@1.0-impl and libmcs depend on libagm, which is decommonized
+# libmcs depends on libar-acdb, libagm, libats, liblx-osal which are gnu makefile targets
+# libqtigefar depends on libar-pal, which is a gnu makefile target
 
 # ADSP
 vendor/bin/adsprpcd
@@ -17,23 +17,12 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
 vendor/lib64/libadm.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libcapiv2svacnnvendor.so
-vendor/lib64/libcapiv2svarnnvendor.so
-vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
-vendor/lib64/libmisight.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so;DISABLE_CHECKELF
+vendor/lib64/soundfx/libshoebox.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -45,9 +34,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbtnv.so

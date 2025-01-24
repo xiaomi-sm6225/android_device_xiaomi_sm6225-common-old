@@ -48,9 +48,13 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@3.1',
     ): lib_fixup_vendor_suffix,
     (
-        'libar-pal',
         'libagm',
-        'libagmclient',
+        'libar-acdb',
+        'libar-gpr',
+        'libar-gsl',
+        'libar-pal',
+        'libats',
+        'liblx-osal',
         'libpalclient',
     ): lib_fixup_remove,
 }
