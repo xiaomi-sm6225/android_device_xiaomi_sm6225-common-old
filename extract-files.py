@@ -35,6 +35,24 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.qti.diaghal@1.0',
+        'vendor.qti.hardware.dpmservice@1.0',
+        'vendor.qti.hardware.qccsyshal@1.0',
+        'vendor.qti.hardware.qccsyshal@1.1',
+        'vendor.qti.hardware.qccsyshal@1.2',
+        'vendor.qti.hardware.qccvndhal@1.0',
+        'vendor.qti.hardware.wifidisplaysession@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+        'vendor.qti.imsrtpservice@3.1',
+    ): lib_fixup_vendor_suffix,
+    (
+        'libar-pal',
+        'libagm',
+        'libagmclient',
+        'libpalclient',
+    ): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
