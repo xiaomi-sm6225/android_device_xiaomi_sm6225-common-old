@@ -58,7 +58,6 @@ TARGET_USES_QCOM_MM_AUDIO := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
-TARGET_NO_BOOTLOADER := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
