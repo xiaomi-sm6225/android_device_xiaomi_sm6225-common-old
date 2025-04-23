@@ -891,9 +891,7 @@ vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril.so
 vendor/lib64/librilqmimiscservices.so
-vendor/lib64/librilutils.so
 vendor/lib64/qcrilInterfaces.so
 vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrilNrQmiModule.so
