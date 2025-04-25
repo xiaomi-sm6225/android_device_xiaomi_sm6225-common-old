@@ -39,6 +39,11 @@ on early-init
     start gki.modprobe
     start vendor.modprobe
 
+    # Mount tracefs in /sys/kernel/tracing as CONFIG_DEBUG_FS might be
+    # disabled and /sys/kernel/debug/tracing might not be available
+    mount tracefs tracefs /sys/kernel/tracing
+    chmod 0755 /sys/kernel/tracing
+
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
@@ -47,6 +52,8 @@ on early-init
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
 
 on post-fs
+    wait_for_prop vendor.all.modules.ready 1
+
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
