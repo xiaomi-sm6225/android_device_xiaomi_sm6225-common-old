@@ -581,26 +581,9 @@ vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
 # Init
-vendor/bin/init.class_main.sh
-vendor/bin/init.kernel.post_boot-bengal-iot.sh
-vendor/bin/init.kernel.post_boot-bengal.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.sh
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qti.kernel.rc
-vendor/etc/init/hw/init.target.rc
+vendor/bin/init.qti.media.sh
+vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.diag.rc
-
-# Kernel
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qti.kernel.debug-bengal.sh
-vendor/bin/init.qti.kernel.debug.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/system_dlkm_modprobe.sh
-vendor/bin/vendor_modprobe.sh
 
 # Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service-qti
@@ -1013,9 +996,6 @@ vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
-# Uevent
-vendor/etc/ueventd.rc
 
 # Venus firmware
 vendor/firmware/venus.mbn
