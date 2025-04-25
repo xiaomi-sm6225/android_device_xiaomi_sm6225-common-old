@@ -172,6 +172,7 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    hardware/qcom-caf/sm6225/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
