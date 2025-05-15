@@ -649,13 +649,6 @@ vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
-# Mlipay
-odm/bin/mlipayd@1.1
-odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
-odm/lib64/libmlipay.so
-odm/lib64/libmlipay@1.1.so
-
 # Native public libraries
 vendor/etc/public.libraries.txt
 
