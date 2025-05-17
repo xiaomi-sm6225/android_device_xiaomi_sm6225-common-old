@@ -184,6 +184,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 # NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.st
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.hce.xml \
