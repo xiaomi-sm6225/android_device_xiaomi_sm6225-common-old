@@ -75,6 +75,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libhidlbase_shim.so'),
     ('vendor/bin/STFlashTool', 'vendor/lib64/libstfactory-vendor.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
+    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
+        .regex_replace('.+DOLBY.+\n', ''),
+    ('vendor/etc/media_codecs.xml', 'media_codecs_khaje_iot.xml', 'media_codecs_khaje_v0.xml'): blob_fixup()
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
