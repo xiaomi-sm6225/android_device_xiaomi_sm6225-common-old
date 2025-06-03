@@ -184,7 +184,8 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += \
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/vintf/manifest.xml \
-    $(COMMON_PATH)/vintf/manifest_xiaomi.xml
+    $(COMMON_PATH)/vintf/manifest_xiaomi.xml \
+    $(COMMON_PATH)/vintf/network_manifest.xml
 
 DEVICE_MATRIX_FILE := \
     hardware/qcom-caf/common/compatibility_matrix.xml
