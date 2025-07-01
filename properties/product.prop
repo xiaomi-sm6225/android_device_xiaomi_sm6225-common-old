@@ -1,0 +1,4 @@
+# Radio
+persist.vendor.radio.enable_temp_dds=true
+ro.vendor.radio.fastdormancy=true
+ro.vendor.radio.features_common=3

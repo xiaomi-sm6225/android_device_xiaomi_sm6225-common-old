@@ -1,0 +1,38 @@
+# Battery
+genfscon sysfs /class/qcom-battery/quick_charge_type                                u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb(/.*)? u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery(/.*)? u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/qcom-battery/odm_battery(/.*)?  u:object_r:vendor_sysfs_battery_supply:s0
+
+# Battery wakeup nodes
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
+
+# DT2W
+genfscon proc /tp_gesture                                                      u:object_r:proc_tp_gesture:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fpc1020/device_prepare                u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/fingerdown_wait               u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/irq                           u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/power_cfg                     u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/request_vreg                  u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup_enable                 u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/vendor                        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/soc/soc:fpc1020                                        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup26               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup18 u:object_r:sysfs_wakeup:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0051/wakeup/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup[0-9]* u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-004e/tcpc/type_c_port0/dual-role-type_c_port0/wakeup[0-9]* u:object_r:sysfs_wakeup:s0

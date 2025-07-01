@@ -1,0 +1,6 @@
+type vendor_mistcdisplay_service, vndservice_manager_type;
+
+set_prop(hal_graphics_composer_default, vendor_ctl_vendor_display_prop)
+set_prop(hal_graphics_composer_default, vendor_display_prop)
+allow hal_graphics_composer_default vendor_mistcdisplay_service:service_manager find;
+add_service(hal_graphics_composer_default, vendor_mistcdisplay_service)
